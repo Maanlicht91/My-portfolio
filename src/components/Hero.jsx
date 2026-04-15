@@ -107,74 +107,87 @@ function Hero() {
                   sx={{ fontSize: 30, padding: "0.8rem 10px" }}
                 />
                 <IconButton>
-                  <GitHubIcon
-                    sx={{
-                      fontSize: 40,
-                      color: "white",
-                      ":hover": {
-                        color: "#d7b262",
-                        boxShadow: "0px 2px #d7b262",
-                      },
-                      boxShadow: "0px 2px 15px lightgray",
-                      transition: "ease-in-out 0.5s",
-                    }}
-                  />
+                  <a href="https://github.com/Maanlicht91" target="_blank">
+                    <GitHubIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "white",
+                        ":hover": {
+                          color: "#d7b262",
+                          boxShadow: "0px 2px #d7b262",
+                        },
+                        boxShadow: "0px 2px 15px lightgray",
+                        transition: "ease-in-out 0.5s",
+                      }}
+                    />
+                  </a>
                 </IconButton>
                 <IconButton>
-                  <LinkedInIcon
-                    sx={{
-                      fontSize: 43,
-                      color: "white",
-                      ":hover": {
-                        color: "#d7b262",
-                        boxShadow: "0px 2px #d7b262",
-                      },
-                      boxShadow: "0px 2px 15px lightgray",
-                      transition: "ease-in-out 0.5s",
-                    }}
-                  />
+                  <a
+                    href="https://www.linkedin.com/in/aynur-demir-a2a819134/"
+                    target="_blank"
+                  >
+                    <LinkedInIcon
+                      sx={{
+                        fontSize: 43,
+                        color: "white",
+                        ":hover": {
+                          color: "#d7b262",
+                          boxShadow: "0px 2px #d7b262",
+                        },
+                        boxShadow: "0px 2px 15px lightgray",
+                        transition: "ease-in-out 0.5s",
+                      }}
+                    />
+                  </a>
                 </IconButton>
                 <IconButton>
-                  <XIcon
-                    sx={{
-                      fontSize: 40,
-                      color: "white",
-                      ":hover": {
-                        color: "#d7b262",
-                        boxShadow: "0px 2px #d7b262",
-                      },
-                      boxShadow: "0px 2px 15px lightgray",
-                      transition: "ease-in-out 0.5s",
-                    }}
-                  />
+                  <a href="https://x.com/MaanLiCht91" target="_blank">
+                    <XIcon
+                      sx={{
+                        fontSize: 40,
+                        color: "white",
+                        ":hover": {
+                          color: "#d7b262",
+                          boxShadow: "0px 2px #d7b262",
+                        },
+                        boxShadow: "0px 2px 15px lightgray",
+                        transition: "ease-in-out 0.5s",
+                      }}
+                    />
+                  </a>
                 </IconButton>
                 <IconButton>
-                  <InstagramIcon
-                    sx={{
-                      fontSize: 42,
-                      color: "white",
-                      ":hover": {
-                        color: "#d7b262",
-                        boxShadow: "0px 2px #d7b262",
-                      },
-                      boxShadow: "0px 2px 15px lightgray",
-                      transition: "ease-in-out 0.5s",
-                    }}
-                  />
+                  <a href="https://www.instagram.com/aynur91" target="_blank">
+                    <InstagramIcon
+                      sx={{
+                        fontSize: 42,
+                        color: "white",
+                        ":hover": {
+                          color: "#d7b262",
+                          boxShadow: "0px 2px #d7b262",
+                        },
+                        boxShadow: "0px 2px 15px lightgray",
+                        transition: "ease-in-out 0.5s",
+                      }}
+                    />
+                  </a>
                 </IconButton>
                 <IconButton>
-                  <EmailIcon
-                    sx={{
-                      fontSize: 42,
-                      color: "white",
-                      ":hover": {
-                        color: "#d7b262",
-                        boxShadow: "0px 2px #d7b262",
-                      },
-                      boxShadow: "0px 2px 15px lightgray",
-                      transition: "ease-in-out 0.5s",
-                    }}
-                  />
+                  <a href="mailto:aynurdemir1991@hotmail.com" target="_blank">
+                    <EmailIcon
+                      sx={{
+                        fontSize: 42,
+                        color: "white",
+                        ":hover": {
+                          color: "#d7b262",
+                          boxShadow: "0px 2px #d7b262",
+                        },
+                        boxShadow: "0px 2px 15px lightgray",
+                        transition: "ease-in-out 0.5s",
+                      }}
+                    />
+                  </a>
                 </IconButton>
               </Box>
             </Stack>

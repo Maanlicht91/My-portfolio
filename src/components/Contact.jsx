@@ -46,16 +46,27 @@ function Contact() {
         flexDirection="row"
         justifyContent="space-around"
         alignContent="center"
+        width="1500px"
+        sx={{ marginLeft: 25 }}
       >
-        <Stack sx={{ boxShadow: "0px 1px 10px 1px #313131", padding: 3 }}>
-          <Box sx={{ marginTop: 2 }}>
-            <img
-              src="/contacts/github.jpg"
-              style={{ width: 130, opacity: "50%" }}
-            />
+        <Stack>
+          <Box sx={{ marginTop: 10 }}>
+            <a href="https://github.com/Maanlicht91" target="_blank">
+              <img src="/contacts/github.jpg" className="contacts-img" />
+            </a>
+          </Box>
+          <Box sx={{ marginTop: 2, marginLeft: 4 }}>
+            <a
+              href="https://www.linkedin.com/in/aynur-demir-a2a819134/"
+              target="_blank"
+            >
+              <img src="/contacts/linkedin.jpg" className="contacts-img" />
+            </a>
           </Box>
           <Box sx={{ marginTop: 2 }}>
-            <img src="/contacts/github.jpg" style={{ width: 100 }} />
+            <a href="https://discord.gg/CatAkyCu" target="_blank">
+              <img src="/contacts/discord.jpg" className="contacts-img" />
+            </a>
           </Box>
         </Stack>
         <Stack justifyContent="center" alignItems="center">
@@ -90,7 +101,7 @@ function Contact() {
                 "& .MuiInputBase-input": { color: "white" },
                 "& .MuiInputLabel-root": { color: "green" },
                 "& .MuiInput-root": {
-                  "&::after": { borderBottom: "2px solid #d7b262" }, // Hover
+                  "&::after": { borderBottom: "2px solid #797878" }, // Hover
                 },
                 width: "400px",
               }}
@@ -110,14 +121,14 @@ function Contact() {
                 "& .MuiOutlinedInput-root": {
                   "& fieldset": { borderColor: "grey" },
                   "&:hover fieldset": { borderColor: "black" },
-                  "&.Mui-focused fieldset": { borderColor: "#d7b262" },
+                  "&.Mui-focused fieldset": { borderColor: "#797878" },
                 },
               }}
               rows={6}
             />
           </Box>
           <Box>
-            <Button sx={{ color: "#c96c6c" }}>
+            <Button sx={{ color: "#d7b262" }}>
               <Typography
                 sx={{
                   fontFamily: "Macondo, sans-serif",
@@ -131,8 +142,20 @@ function Contact() {
           </Box>
         </Stack>
         <Stack>
-          <Box>
-            <img src="/contacts/github.jpg" style={{ width: 100 }} />
+          <Box sx={{ marginTop: 10, marginRight: 4 }}>
+            <a href="https://www.instagram.com/aynur91" target="_blank">
+              <img src="/contacts/instagram.jpg" className="contacts-img" />
+            </a>
+          </Box>
+          <Box sx={{ marginTop: 2, marginLeft: 4 }}>
+            <a href="https://www.skool.com/@aynur-demir-7280" target="_blank">
+              <img src="/contacts/skool.jpg" className="contacts-img" />
+            </a>
+          </Box>
+          <Box sx={{ marginTop: 2 }}>
+            <a href="https://x.com/MaanLiCht91" target="_blank">
+              <img src="/contacts/x.jpg" className="contacts-img" />
+            </a>
           </Box>
         </Stack>
       </Stack>
