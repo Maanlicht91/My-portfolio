@@ -12,7 +12,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "../utility/fonts";
 function About() {
   return (
-    <div>
+    <section id="About">
       <Stack sx={{ marginTop: 3 }}>
         <ThemeProvider theme={theme}>
           <Typography
@@ -142,7 +142,7 @@ function About() {
           </Stack>
         </Box>
       </Stack>
-    </div>
+    </section>
   );
 }
 

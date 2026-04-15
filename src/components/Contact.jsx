@@ -11,7 +11,7 @@ import { theme } from "../utility/fonts";
 
 function Contact() {
   return (
-    <div>
+    <section id="Contact">
       <Stack sx={{ marginTop: 3 }}>
         <ThemeProvider theme={theme}>
           <Typography
@@ -159,7 +159,7 @@ function Contact() {
           </Box>
         </Stack>
       </Stack>
-    </div>
+    </section>
   );
 }
 

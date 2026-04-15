@@ -21,7 +21,7 @@ import { projects } from "../utility/myProjects";
 
 function Projects() {
   return (
-    <div>
+    <section id="Projects">
       <Stack sx={{ marginTop: 3 }}>
         <ThemeProvider theme={theme}>
           <Typography
@@ -137,7 +137,7 @@ function Projects() {
             </Grid>
           ))}
       </Grid>
-    </div>
+    </section>
   );
 }
 

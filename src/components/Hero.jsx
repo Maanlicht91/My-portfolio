@@ -19,7 +19,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 function Hero() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   return (
-    <div>
+    <section id="Hero">
       <Stack
         flexDirection="row"
         justifyContent="space-around"
@@ -197,7 +197,7 @@ function Hero() {
           <img src={ProfilePic} className="hero-picture" />
         </Box>
       </Stack>
-    </div>
+    </section>
   );
 }
 

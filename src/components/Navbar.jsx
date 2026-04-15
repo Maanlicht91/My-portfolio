@@ -24,20 +24,22 @@ function Navbar() {
           </Box>
           <Box sx={{ marginRight: 10 }}>
             {pages.map((page) => (
-              <ThemeProvider theme={theme} key={page}>
-                <Button
-                  key={page}
-                  color="white"
-                  sx={{
-                    fontFamily: "Macondo",
-                    textTransform: "capitalize",
-                    fontSize: 20,
-                    ":hover": { color: "#d7b262" },
-                  }}
-                >
-                  {page}
-                </Button>
-              </ThemeProvider>
+              <a href={`#${page}`}>
+                <ThemeProvider theme={theme} key={page}>
+                  <Button
+                    key={page}
+                    sx={{
+                      fontFamily: "Macondo",
+                      textTransform: "capitalize",
+                      fontSize: 20,
+                      color: "#fff",
+                      ":hover": { color: "#d7b262" },
+                    }}
+                  >
+                    {page}
+                  </Button>
+                </ThemeProvider>
+              </a>
             ))}
           </Box>
         </Stack>
