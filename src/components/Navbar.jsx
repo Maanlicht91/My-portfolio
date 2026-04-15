@@ -16,7 +16,7 @@ function Navbar() {
       <AppBar
         position="fixed"
         sx={{
-          height: 75,
+          height: 50,
           backgroundColor: "transparent",
           marginTop: 3,
         }}
