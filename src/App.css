@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+
+.logo-img {
+  width: 55px;
+  height: 35px;
+}
+.logo-text {
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  position: absolute;
+  left: 115px;
+  color: white;
+}
+
+.nav-btn {
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: lowercase;
+}
+
+.hero-picture {
+  width: 500px;
+  height: 700px;
+  border-radius: 90px;
+}
+
+hr {
+  width: 60px;
+}
+
+.section-line {
+  width: 90%;
+  border-color: lightgray;
+  opacity: 30%;
+}
+
+.fragment {
+  width: 400px;
+  height: 500px;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+  transition: all ease-out 0.4s;
+}
+
+.icons:hover {
+  width: 80px;
+  height: 80px;
+}
+
+.spans {
+  color: #c96c6c;
+  font-weight: bold;
+  text-decoration: underline;
+}
