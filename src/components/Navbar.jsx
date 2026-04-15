@@ -12,10 +12,14 @@ function Navbar() {
   const pages = ["Home", "Projects", "About", "Contact"];
 
   return (
-    <div>
+    <div style={{ marginBottom: 60 }}>
       <AppBar
         position="fixed"
-        sx={{ height: 50, backgroundColor: "transparent", marginTop: 3 }}
+        sx={{
+          height: 75,
+          backgroundColor: "transparent",
+          marginTop: 3,
+        }}
       >
         <Stack flexDirection="row" justifyContent="space-between">
           <Box sx={{ marginLeft: 10 }}>
