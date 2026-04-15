@@ -14,8 +14,8 @@ function Navbar() {
   return (
     <div>
       <AppBar
-        position="static"
-        sx={{ height: 75, backgroundColor: "transparent", marginTop: 3 }}
+        position="fixed"
+        sx={{ height: 50, backgroundColor: "transparent", marginTop: 3 }}
       >
         <Stack flexDirection="row" justifyContent="space-between">
           <Box sx={{ marginLeft: 10 }}>

@@ -19,7 +19,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 function Hero() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   return (
-    <section id="Hero">
+    <section id="Home">
       <Stack
         flexDirection="row"
         justifyContent="space-around"
