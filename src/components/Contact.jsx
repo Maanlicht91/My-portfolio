@@ -46,10 +46,10 @@ function Contact() {
         justifyContent="center"
         alignContent="center"
         sx={{
-          marginLeft: { xs: 2, md: 10, lg: 10 },
+          marginLeft: { xs: 2, md: 10, lg: 5 },
           flexDirection: { xs: "column", md: "row" },
           maxWidth: { xs: 390, md: 900, lg: 1200, xl: 1850 },
-          gap: { xs: 10, md: 13 },
+          gap: { xs: 2, md: 13 },
         }}
       >
         <Stack sx={{ flexDirection: { xs: "row", md: "column" } }}>
