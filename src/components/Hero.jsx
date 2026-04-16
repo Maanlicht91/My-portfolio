@@ -21,11 +21,16 @@ function Hero() {
   return (
     <section id="Home">
       <Stack
-        flexDirection="row"
         justifyContent="space-around"
-        sx={{ width: "100%" }}
+        sx={{ width: "100%", flexDirection: { xs: "column", md: "row" } }}
       >
-        <Box sx={{ marginTop: 25, marginLeft: 10, width: 550 }}>
+        <Box
+          sx={{
+            marginTop: { xs: 5, md: 25 },
+            marginLeft: { xs: 3, md: 25 },
+            width: { xs: 390, md: 550 },
+          }}
+        >
           <ThemeProvider theme={theme}>
             <Typography
               color="white"
@@ -85,7 +90,8 @@ function Hero() {
                   color: "black",
                   fontFamily: "Segoe UI, sans-serif",
                   fontWeight: "bold",
-                  height: 45,
+                  fontSize: { xs: 10, md: 14 },
+                  height: { xs: 30, md: 45 },
                 }}
                 onClick={() => setIsContactOpen(!isContactOpen)}
               >
@@ -96,15 +102,18 @@ function Hero() {
                   color: "white",
                   display: "flex",
                   opacity: isContactOpen ? "100%" : "0",
-                  gap: "0.1rem",
+                  gap: { xs: 0, md: "0.1rem" },
                   transition: isContactOpen
                     ? "opacity 1s ease-in"
                     : "opacity 1s ease-out",
-                  height: 45,
+                  height: { xs: 30, md: 45 },
                 }}
               >
                 <ArrowForwardIosIcon
-                  sx={{ fontSize: 30, padding: "0.8rem 10px" }}
+                  sx={{
+                    fontSize: { xs: 20, md: 30 },
+                    padding: { xs: 0, md: "0.8rem 10px" },
+                  }}
                 />
                 <IconButton>
                   <a href="https://github.com/Maanlicht91" target="_blank">
@@ -193,7 +202,7 @@ function Hero() {
             </Stack>
           </ThemeProvider>
         </Box>
-        <Box sx={{ marginTop: 1, marginLeft: 5 }}>
+        <Box sx={{ marginTop: 1, marginLeft: { xs: 1, md: 5 } }}>
           <img src={ProfilePic} className="hero-picture" />
         </Box>
       </Stack>

@@ -43,19 +43,21 @@ function Contact() {
         </ThemeProvider>
       </Stack>
       <Stack
-        flexDirection="row"
         justifyContent="space-around"
         alignContent="center"
-        width="1500px"
-        sx={{ marginLeft: 25 }}
+        sx={{
+          marginLeft: { xs: 2, md: 25 },
+          flexDirection: { xs: "column", md: "row" },
+          width: { xs: 390, md: "1500px" },
+        }}
       >
-        <Stack>
-          <Box sx={{ marginTop: 10 }}>
+        <Stack sx={{ flexDirection: { xs: "row", md: "column" } }}>
+          <Box sx={{ marginTop: { xs: 2, md: 10 } }}>
             <a href="https://github.com/Maanlicht91" target="_blank">
               <img src="/contacts/github.jpg" className="contacts-img" />
             </a>
           </Box>
-          <Box sx={{ marginTop: 2, marginLeft: 4 }}>
+          <Box sx={{ marginTop: 2, marginLeft: { xs: 0, md: 4 } }}>
             <a
               href="https://www.linkedin.com/in/aynur-demir-a2a819134/"
               target="_blank"
@@ -69,12 +71,13 @@ function Contact() {
             </a>
           </Box>
         </Stack>
-        <Stack justifyContent="center" alignItems="center">
-          <Box
-            sx={{
-              marginTop: 5,
-            }}
-          >
+        <Stack
+          sx={{
+            justifyContent: { xs: "start", md: "center" },
+            alignContent: { xs: "start", md: "center" },
+          }}
+        >
+          <Box>
             <Tooltip title="That's my dream 😊">
               <Typography
                 color="#c96c6c"
@@ -85,13 +88,20 @@ function Contact() {
                   fontStyle: "italic",
                   fontWeight: 100,
                   textAlign: "center",
-                  marginBottom: 6,
+                  marginBottom: { xs: 2, md: 6 },
+                  marginTop: { xs: 4, md: 0 },
                   border: "1px solid #c96c6c",
                 }}
               >
                 I’m open to internship and junior opportunities.
               </Typography>
             </Tooltip>
+          </Box>
+          <Box
+            sx={{
+              marginTop: 5,
+            }}
+          >
             <TextField
               focused
               id="standard-basic"
@@ -103,7 +113,7 @@ function Contact() {
                 "& .MuiInput-root": {
                   "&::after": { borderBottom: "2px solid #797878" }, // Hover
                 },
-                width: "400px",
+                width: { xs: 390, md: 400 },
               }}
             />
           </Box>
@@ -115,7 +125,7 @@ function Contact() {
               variant="outlined"
               multiline
               sx={{
-                width: "400px",
+                width: { xs: 390, md: 400 },
                 marginTop: 4,
                 "& .MuiInputBase-input": { color: "white" },
                 "& .MuiOutlinedInput-root": {
@@ -134,6 +144,7 @@ function Contact() {
                   fontFamily: "Macondo, sans-serif",
                   fontSize: 20,
                   marginTop: 2,
+                  marginLeft: { xs: 18, md: 0 },
                 }}
               >
                 Submit
@@ -141,13 +152,15 @@ function Contact() {
             </Button>
           </Box>
         </Stack>
-        <Stack>
-          <Box sx={{ marginTop: 10, marginRight: 4 }}>
+        <Stack sx={{ flexDirection: { xs: "row", md: "column" } }}>
+          <Box
+            sx={{ marginTop: { xs: 2, md: 10 }, marginRight: { xs: 0, md: 4 } }}
+          >
             <a href="https://www.instagram.com/aynur91" target="_blank">
               <img src="/contacts/instagram.jpg" className="contacts-img" />
             </a>
           </Box>
-          <Box sx={{ marginTop: 2, marginLeft: 4 }}>
+          <Box sx={{ marginTop: 2, marginLeft: { xs: 0, md: 4 } }}>
             <a href="https://www.skool.com/@aynur-demir-7280" target="_blank">
               <img src="/contacts/skool.jpg" className="contacts-img" />
             </a>

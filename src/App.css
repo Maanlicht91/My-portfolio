@@ -66,3 +66,10 @@ hr {
   width: 130px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .hero-picture {
+    width: 400px;
+    height: 500px;
+  }
+}

@@ -43,16 +43,21 @@ function About() {
         </ThemeProvider>
       </Stack>
       <Stack
-        flexDirection="row"
         justifyContent="space-around"
-        sx={{ width: "100%" }}
+        sx={{ width: "100%", flexDirection: { xs: "column", md: "row" } }}
       >
-        <Box sx={{ marginTop: 10, marginLeft: 10, width: 550 }}>
+        <Box
+          sx={{
+            marginTop: { xs: 2, md: 10 },
+            marginLeft: 10,
+            width: { xs: 300, md: 550 },
+          }}
+        >
           <Typography
             color="white"
             sx={{
               fontFamily: "Delius, sans-serif",
-              fontSize: 18,
+              fontSize: { xs: 15, md: 18 },
               lineHeight: 2,
               marginTop: 2,
               marginBottom: 4,
@@ -74,9 +79,15 @@ function About() {
             backend skills and building real-world projects.
           </Typography>
         </Box>
-        <Box sx={{ marginTop: 8, marginLeft: 10, width: 550 }}>
+        <Box
+          sx={{
+            marginTop: { xs: 1, md: 8 },
+            marginLeft: { xs: 2, md: 10 },
+            width: 550,
+          }}
+        >
           <Stack>
-            <Box sx={{ marginLeft: "-70px" }}>
+            <Box sx={{ marginLeft: { xs: 0, md: "-70px" } }}>
               <Typography
                 color="#d7b262"
                 sx={{
@@ -97,7 +108,7 @@ function About() {
                   </Tooltip>
                 ))}
             </Box>
-            <Box sx={{ marginLeft: "20px" }}>
+            <Box sx={{ marginLeft: { xs: 0, md: "20px" } }}>
               <Typography
                 color="#d7b262"
                 sx={{
@@ -118,7 +129,7 @@ function About() {
                   </Tooltip>
                 ))}
             </Box>
-            <Box sx={{ marginLeft: "110px" }}>
+            <Box sx={{ marginLeft: { xs: 0, md: "110px" } }}>
               <Typography
                 color="#d7b262"
                 sx={{
