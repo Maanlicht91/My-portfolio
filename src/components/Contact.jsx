@@ -43,12 +43,13 @@ function Contact() {
         </ThemeProvider>
       </Stack>
       <Stack
-        justifyContent="space-around"
+        justifyContent="center"
         alignContent="center"
         sx={{
-          marginLeft: { xs: 2, md: 25 },
+          marginLeft: { xs: 2, md: 10, lg: 10 },
           flexDirection: { xs: "column", md: "row" },
-          width: { xs: 390, md: "1500px" },
+          maxWidth: { xs: 390, md: 900, lg: 1200, xl: 1850 },
+          gap: { xs: 10, md: 13 },
         }}
       >
         <Stack sx={{ flexDirection: { xs: "row", md: "column" } }}>
@@ -88,8 +89,8 @@ function Contact() {
                   fontStyle: "italic",
                   fontWeight: 100,
                   textAlign: "center",
-                  marginBottom: { xs: 2, md: 6 },
-                  marginTop: { xs: 4, md: 0 },
+                  marginBottom: { xs: 2, md: 2 },
+                  marginTop: { xs: 4, md: 4 },
                   border: "1px solid #c96c6c",
                 }}
               >
@@ -144,7 +145,7 @@ function Contact() {
                   fontFamily: "Macondo, sans-serif",
                   fontSize: 20,
                   marginTop: 2,
-                  marginLeft: { xs: 18, md: 0 },
+                  marginLeft: { xs: 18, md: 20 },
                 }}
               >
                 Submit

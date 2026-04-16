@@ -49,7 +49,7 @@ function About() {
         <Box
           sx={{
             marginTop: { xs: 2, md: 10 },
-            marginLeft: 10,
+            marginLeft: { xs: 5, md: 10 },
             width: { xs: 300, md: 550 },
           }}
         >
@@ -83,7 +83,7 @@ function About() {
           sx={{
             marginTop: { xs: 1, md: 8 },
             marginLeft: { xs: 2, md: 10 },
-            width: 550,
+            width: { xs: 390, md: 550 },
           }}
         >
           <Stack>

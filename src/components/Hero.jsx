@@ -28,7 +28,7 @@ function Hero() {
           sx={{
             marginTop: { xs: 5, md: 25 },
             marginLeft: { xs: 3, md: 25 },
-            width: { xs: 390, md: 550 },
+            width: { xs: 370, md: 550 },
           }}
         >
           <ThemeProvider theme={theme}>

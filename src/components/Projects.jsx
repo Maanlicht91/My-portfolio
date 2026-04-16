@@ -64,7 +64,7 @@ function Projects() {
       >
         {projects &&
           projects.map((project) => (
-            <Grid size={{ xs: 12, md: 6 }} key={project.id}>
+            <Grid size={{ xs: 12, md: 4 }} key={project.id}>
               <Card
                 sx={{
                   backgroundImage: `url(${ProjectFrame})`,

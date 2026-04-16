@@ -32,9 +32,8 @@ function Navbar() {
         component="nav"
         sx={{
           height: 50,
-          backgroundColor: "transparent",
-          marginTop: 3,
-          width: { xs: 390, md: "auto" },
+          backgroundColor: "black",
+          width: { xs: 390, md: "100%" },
           right: { xs: "auto", md: 0 },
         }}
       >
