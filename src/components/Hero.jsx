@@ -27,7 +27,7 @@ function Hero() {
         <Box
           sx={{
             marginTop: { xs: 5, md: 25 },
-            marginLeft: { xs: 3, md: 25 },
+            marginLeft: { xs: 3, md: 10, lg: 25 },
             width: { xs: 370, md: 550 },
           }}
         >

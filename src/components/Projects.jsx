@@ -58,13 +58,13 @@ function Projects() {
         rowSpacing={1}
         sx={{
           color: "white",
-          marginLeft: { xs: 1, md: 30 },
+          marginLeft: { xs: 1, md: 15, lg: 30 },
           marginTop: { xs: 4, md: 10 },
         }}
       >
         {projects &&
           projects.map((project) => (
-            <Grid size={{ xs: 12, md: 4 }} key={project.id}>
+            <Grid size={{ xs: 12, md: 6, lg: 4 }} key={project.id}>
               <Card
                 sx={{
                   backgroundImage: `url(${ProjectFrame})`,
