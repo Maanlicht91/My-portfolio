@@ -33,7 +33,7 @@ function Navbar() {
         sx={{
           height: 50,
           backgroundColor: "black",
-          width: { xs: 390, md: "100%" },
+          width: { xs: 400, md: "100%" },
           right: { xs: "auto", md: 0 },
         }}
       >
@@ -73,7 +73,7 @@ function Navbar() {
               color="inherit"
               sx={{ p: 0 }}
             >
-              <MenuIcon />
+              <MenuIcon sx={{ fontSize: 40 }} />
             </IconButton>
             <Menu
               id="menu-appbar"
