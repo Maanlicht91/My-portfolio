@@ -91,9 +91,13 @@ function Projects() {
                   </Typography>
                   <CardMedia
                     component="img"
-                    image={GsLogo}
+                    image={project.coverImg}
                     height={200}
-                    sx={{ width: "360px" }}
+                    sx={{
+                      width: "370px",
+                      boxShadow: "0 4px 8px 0 rgba(255, 255, 255, 0.2)",
+                      borderTop: "2px solid #d7b262",
+                    }}
                   />
                   <Typography
                     color="white"
@@ -101,6 +105,7 @@ function Projects() {
                       fontFamily: "Iceberg, sans-serif",
                       fontSize: 18,
                       marginTop: 2,
+                      marginLeft: 1,
                       width: 350,
                       textAlign: "center",
                     }}
@@ -112,7 +117,7 @@ function Projects() {
                     sx={{
                       fontFamily: "Iceberg, sans-serif",
                       fontSize: 18,
-                      marginTop: 2,
+                      marginTop: 1.4,
                       width: 350,
                       textAlign: "center",
                     }}
@@ -121,21 +126,42 @@ function Projects() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <a href={project.link} target="_blank">
-                    <Button
-                      variant="contained"
-                      sx={{
-                        backgroundColor: "#5c5858",
-                        color: "#d7b262",
-                        fontWeight: "bold",
-                        fontFamily: "Iceberg, sans-serif",
-                        width: "200px",
-                        margin: 11,
-                      }}
-                    >
-                      Github
-                    </Button>
-                  </a>
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    sx={{ marginLeft: 6, marginBottom: 2 }}
+                  >
+                    <a href={project.link} target="_blank">
+                      <Button
+                        variant="contained"
+                        sx={{
+                          backgroundColor: "#5c5858",
+                          color: "#d7b262",
+                          fontWeight: "bold",
+                          fontFamily: "Iceberg, sans-serif",
+                          width: "120px",
+                          margin: 1,
+                        }}
+                      >
+                        Github
+                      </Button>
+                    </a>
+                    <a href={project.website} target="_blank">
+                      <Button
+                        variant="contained"
+                        sx={{
+                          backgroundColor: "#5c5858",
+                          color: "#d7b262",
+                          fontWeight: "bold",
+                          fontFamily: "Iceberg, sans-serif",
+                          width: "120px",
+                          margin: 1,
+                        }}
+                      >
+                        Live
+                      </Button>
+                    </a>
+                  </Stack>
                 </CardActions>
               </Card>
             </Grid>
